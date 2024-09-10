@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DoctorNearby.Persistence</name>
+    </assembly>
+    <members>
+        <member name="T:DoctorNearby.Persistence.Migrations.initmigration">
+            <inheritdoc />
+        </member>
+        <member name="M:DoctorNearby.Persistence.Migrations.initmigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DoctorNearby.Persistence.Migrations.initmigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DoctorNearby.Persistence.Migrations.initmigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

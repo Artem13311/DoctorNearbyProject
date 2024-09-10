@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DoctorNearby.API</name>
+    </assembly>
+    <members>
+        <member name="M:DoctorNearby.API.Controllers.DoctorController.Create(DoctorNearby.Business.CRUD.Doctor.CreateDoctor.CreateDoctorRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for create doctor.
+            </summary>
+            <param name="request">Set of parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.DoctorController.GetAll(DoctorNearby.Business.CRUD.Doctor.ReadDoctors.ReadDoctorsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint to retrieve doctors with linked fields with sorting and pagination.
+            </summary>
+            <param name="request">Set of parameter.s</param>
+            <returns>List of sorted doctors.</returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.DoctorController.Update(System.Guid,DoctorNearby.Business.Models.DTO.Doctor.UpdateDoctorDto,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for update doctor.
+            </summary>
+            <param name="id">Id of doctor.</param>
+            <param name="doctorDto">Doctor new fields.</param>
+            <returns>response message and status code.</returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.DoctorController.Delete(DoctorNearby.Business.CRUD.Doctor.DeleteDoctor.DeleteDoctorByIdRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for delete doctor.
+            </summary>
+            <returns>response message and status code.</returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.PatientController.Create(DoctorNearby.Business.CRUD.Patient.CreatePatient.CreatePatientRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for create patient.
+            </summary>
+            <param name="request">Set of parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.PatientController.GetAll(DoctorNearby.Business.CRUD.Patient.ReadPatients.ReadPatientsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint to retrieve patients with linked fields with sorting and pagination.
+            </summary>
+            <param name="request">Set of parameters.</param>
+            <returns>List of sorted patients</returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.PatientController.Update(System.Guid,DoctorNearby.Business.Models.DTO.Patient.UpdatePatientDto,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for update patient.
+            </summary>
+            <param name="id">Id of patient.</param>
+            <param name="patientDto">Patient new fields.</param>
+            <returns>response message and status code</returns>
+        </member>
+        <member name="M:DoctorNearby.API.Controllers.PatientController.Delete(DoctorNearby.Business.CRUD.Patient.DeletePatient.DeletePatientByIdRequest,System.Threading.CancellationToken)">
+            <summary>
+            Endpoint for delete patient.
+            </summary>
+            <returns>response message and status code</returns>
+        </member>
+    </members>
+</doc>
