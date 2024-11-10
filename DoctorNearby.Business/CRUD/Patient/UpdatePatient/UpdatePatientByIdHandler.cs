@@ -24,7 +24,7 @@ namespace DoctorNearby.Business.CRUD.Patient.UpdatePatient
             patient.DistrictId = request.Patient.DistrictId;
             patient.Sex = request.Patient.Sex;
 
-            await _repository.UpdateAsync(patient);
+            await _repository.UpdateAsync(patient, cancellationToken);
 
             return new BaseResponse<UpdatePatientDto>("Patient has been successfully updated", 200);
 

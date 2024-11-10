@@ -7,8 +7,8 @@ using MediatR;
 
 namespace DoctorNearby.Business.CRUD.Doctor.CreateDoctor
 {
-    public sealed class CreateDoctorHandler : IRequestHandler<CreateDoctorRequest, BaseResponse<CreateDoctorDto>>
-    {
+        public sealed class CreateDoctorHandler : IRequestHandler<CreateDoctorRequest, BaseResponse<CreateDoctorDto>>
+        {
         private readonly IMapper _mapper;
         private readonly IDoctorRepository _repository;
 
@@ -21,7 +21,7 @@ namespace DoctorNearby.Business.CRUD.Doctor.CreateDoctor
         {
             var doctorEntity = _mapper.Map<DoctorEntity>(request.Doctor);
 
-            await _repository.CreateAsync(doctorEntity);
+            await _repository.CreateAsync(doctorEntity, cancellationToken);
 
             return new BaseResponse<CreateDoctorDto>("The doctor was successfully created", 201);
 

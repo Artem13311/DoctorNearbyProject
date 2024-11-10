@@ -20,7 +20,7 @@ namespace DoctorNearby.Business.CRUD.Patient.CreatePatient
         {
             var patientEntity = _mapper.Map<PatientEntity>(request.Patient);
 
-            await _repository.CreateAsync(patientEntity);
+            await _repository.CreateAsync(patientEntity, cancellationToken);
 
             return new BaseResponse<CreatePatientDto>("The patient was successfully created", 201);
 

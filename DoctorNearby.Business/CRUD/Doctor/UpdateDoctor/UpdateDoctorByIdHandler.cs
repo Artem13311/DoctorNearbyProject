@@ -26,7 +26,7 @@ namespace DoctorNearby.Business.CRUD.Doctor.UpdateDoctor
             doctor.CabinetId = request.DoctorDto.CabinetId;
             doctor.SpecializationId= request.DoctorDto.SpecializationId;
 
-            await _repository.UpdateAsync(doctor);
+            await _repository.UpdateAsync(doctor, cancellationToken);
 
             return new BaseResponse<DoctorDto>("Doctor has been successfully updated", 200);
 

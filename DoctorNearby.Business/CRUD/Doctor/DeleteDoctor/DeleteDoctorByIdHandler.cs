@@ -18,7 +18,7 @@ namespace DoctorNearby.Business.CRUD.Doctor.DeleteDoctor
 
             if (doctor == null) return new BaseResponse<DoctorDto>("Doctor not found", 404);
 
-            await _repository.DeleteAsync(doctor);
+            await _repository.DeleteAsync(doctor, cancellationToken);
 
             return new BaseResponse<DoctorDto>("Doctor was successfully removed", 200);
         }

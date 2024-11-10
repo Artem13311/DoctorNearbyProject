@@ -19,7 +19,7 @@ namespace DoctorNearby.Business.CRUD.Patient.ReadPatients
         {
             var patientsByPage = await _repository.GetByPage(request.Page, request.PageSize);
 
-            var sortedPatients = await _repository.GetAllWithFilterAsync(patientsByPage, request.PatientSortFields, request.SortType);
+            var sortedPatients = await _repository.GetAllWithFilterAsync(patientsByPage, request.PatientSortFields, request.SortType, cancellationToken);
 
             return sortedPatients.Count == 0
                 ? new BaseResponse<PatientDto>("No patients found with this filter", 404)
